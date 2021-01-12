@@ -1,0 +1,68 @@
+.smsg{
+    position: relative;
+}
+.previewImage{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    height: 410px;
+    margin: 0 auto;
+    background-color: rgb(42, 104, 78);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    
+}
+.previewImage img{
+    width: 70%;
+    height: 80%;
+    border-radius: 10%;
+    -webkit-box-shadow: 1px 2px 8px 2px rgba(245,237,245,1);
+    -moz-box-shadow: 1px 2px 8px 2px rgba(245,237,245,1);
+    box-shadow: 1px 2px 8px 2px rgba(245,237,245,1);
+}
+.rightarrow,.leftarrow{
+   font-size: 35px;
+   background-color: rgb(38, 151, 34);
+   border-radius: 50%;
+   color: rgb(149, 245, 149);
+   cursor: pointer;
+}
+.rightarrow:hover{
+    opacity: 0.8;
+    background-color: rgb(194, 248, 194);
+}
+.leftarrow:hover{
+    opacity: 0.8;
+    background-color: rgb(249, 252, 249);
+}
+.xcross{
+   position: absolute;
+   top: 0;
+   right: 20px;
+   font-size: 18px;
+   font-weight: 600;
+   color: rgb(236, 216, 33);
+   cursor: pointer;
+   border: 2px solid rgb(253, 250, 250);
+   border-radius: 5px;
+   padding: 3px;
+}
+.xcross:hover{
+    color: red;
+    font-weight: 900;
+    border: 2px solid rgb(231, 198, 7);
+
+}
+
+
+
+@media only screen and (max-width:480px){
+    .previewImage{
+        width: 320px;
+        height: 330px;
+    }
+}
